@@ -7,52 +7,51 @@ body {
 }
 
 .wraper {
-	max-width: 1000px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 0px;
     background-color: white;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .header {
-	
-	background-color: #3b5998;
-    color: white;    
+    background-color: #3b5998;
+    color: white;
     text-align: center;
     border-bottom: 1px solid #dfe3ee;
-	display: block;
-	padding: 20px;
-	border-top-left-radius: 8px; 
-    border-top-right-radius: 8px; 
-    border-bottom-left-radius: 0; 
+    display: block;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-.header h1 {
-    font-size: 24px;
-    margin: 0;
-    font-weight: normal;
-}
+    .header h1 {
+        font-size: 24px;
+        margin: 0;
+        font-weight: normal;
+    }
 
-.header p {
-    margin: 5px 0;	
-}
+    .header p {
+        margin: 5px 0;
+    }
 
 .container {
-  	margin: 20px auto;
-	padding: 20px;
+    margin: 20px auto;
+    padding: 20px;
     display: flex;
     gap: 2%;
 }
 
-.left-column{
+.left-column {
     width: 35%;
 }
 
-.right-column{
-	width: 63%;
+.right-column {
+    width: 63%;
 }
 
 .section {
@@ -72,101 +71,117 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+    a:hover {
+        text-decoration: underline;
+    }
 
 .skills-list, .projects-list, .languages-list {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-.skills-list li, .projects-list li, .languages-list li {
-    margin: 1px 0;
-    padding: 6px;
-    border: 1px solid #dfe3ee;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    background-color: #f5f6f7;
-}
+    .skills-list li, .projects-list li, .languages-list li {
+        margin: 1px 0;
+        margin-bottom: 10px;
+        padding: 6px;
+        border: 1px solid #dfe3ee;
+        border-radius: 6px;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        background-color: #f5f6f7;
+        justify-content: flex-start; 
+    }
 
-.skills-list li i, .projects-list li i, .languages-list li i {
-    margin-right: 10px;
-	font-size: 18px; /* Размер иконки */
-    color: #3b5998;
-}
+    .skills-list i, .projects-list i, .languages-list i {
+        margin-right: 10px;
+        font-size: 1.2em; 
+        color: #3b5998;
+        display: inline-block; 
+        width: 25px; 
+        text-align: center; 
+    }
 
-.skills-list li span {
-    flex: 1;
-}
+    .skills-list li span {
+        display: inline-block; 
+        vertical-align: middle; 
+        margin-left: 10px;
+    }
 
 .print-button {
     text-align: center;
     margin: 20px 0;
 }
 
-.print-button button {
-    padding: 10px 20px;
-    background-color: #3b5998;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .print-button button {
+        padding: 10px 20px;
+        background-color: #3b5998;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-.print-button button:hover {
-    background-color: #365899;
-}
+        .print-button button:hover {
+            background-color: #365899;
+        }
 
 /* Print styles */
 @media print {
     body {
         background-color: white;
         color: black;
-		font-size: 10pt; /* Уменьшение размера шрифта */
-        line-height: 1.4; /* Уменьшение высоты строки */
-	}
+        font-size: 10pt; 
+        line-height: 1.4; 
+    }
+
     .header {
         background-color: white;
         color: black;
         border-bottom: 1px solid black;
-		padding: 5px;
+        padding: 5px;
     }
+
     .print-button {
         display: none;
     }
+
     h1, h2 {
         color: black;
-		margin-bottom: 2mm; /* Уменьшение отступов для заголовков */
+        margin-bottom: 2mm; 
     }
-	p, li {
-        margin-bottom: 1mm; /* Уменьшение отступов для абзацев и списков */
 
+    p, li {
+        margin-bottom: 1mm; 
     }
+
     .container {
         box-shadow: none;
-        display: flex; 
+        display: flex;
         gap: 2%;
         padding: 0;
     }
+
     .left-column {
-        width: 35%;		
+        width: 35%;
     }
-	.right-column {
-		width: 63%;
-	}
+
+    .right-column {
+        width: 63%;
+    }
+
     .skills-list li, .projects-list li, .languages-list li {
         background-color: white;
         border: none;
-		margin: 0px 0;
-		padding: 0px;
-		align-items: center;
-
+        margin: 0px 0;
+        padding: 0px;
+        align-items: center;
     }
+
     @page {
         size: A4;
         margin: 5mm;
-		margin-left: 15mm;
+        margin-left: 15mm;
     }
 }

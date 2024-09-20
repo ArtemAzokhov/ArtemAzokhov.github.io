@@ -7,14 +7,14 @@
     <title>Artsiom Azokhau - Game Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/resume.css">
-	<link rel="shortcut icon" href="assets/game.ico">
-	<script>
-        
+    <link rel="shortcut icon" href="assets/game.ico">
+    <script>
+
         async function loadProfile() {
-            const response = await fetch(`data.csv?t=${new Date().getTime()}`); 
+            const response = await fetch(`data.csv?t=${new Date().getTime()}`);
             const data = await response.text();
             const rows = data.split("\n");
-            const profileText = rows[1].split(";")[1]; 
+            const profileText = rows[1].split(";")[1];
             document.getElementById('profile-text').textContent = profileText;
         }
 
@@ -24,99 +24,91 @@
 
 <body>
     <div class="wraper">
-	
-    <div class="header">
-        <h1>Artsiom Azokhau</h1>
-        <p>Game Developer</p>
-        <p>
-		<i class="fas fa-envelope"></i> <a href="mailto:azokhov@gmail.com" style="color: white;">azokhov@gmail.com</a> | 
-		<i class="fas fa-phone"></i> <a href="tel:+995557953153" style="color: white;">+995 55 795-31-53</a> |
-		<i class="fas fa-location-dot"></i>  Tbilisi, Georgia | 
-		</p>
-		<p>
-		<i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/artsiom-azokhau " style="color: white;" target="_blank">LinkedIn</a> | 
-		<i class="fab fa-github"></i> <a href="https://github.com/ArtemAzokhov" style="color: white;" target="_blank">GitHub</a> | 
-		<i class="fab fa-itch-io"></i> <a href="https://itemichdev.itch.io"style="color: white;" target="_blank">Itch</a>
-		</p>        
-    </div>
 
-	<div class="container">
-        <!-- Left Column -->
-        <div class="left-column">
+        <div class="header">
+            <h1>Artsiom Azokhau</h1>
+            <p>Game Developer</p>
+            <p>
+                <i class="fas fa-envelope"></i> <a href="mailto:azokhov@gmail.com" style="color: white;">azokhov@gmail.com</a> |
+                <i class="fas fa-phone"></i> <a href="tel:+995557953153" style="color: white;">+995 55 795-31-53</a> |
+                <i class="fas fa-location-dot"></i>  Tbilisi, Georgia |
+            </p>
+            <p>
+                <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/artsiom-azokhau " style="color: white;" target="_blank">LinkedIn</a> |
+                <i class="fab fa-github"></i> <a href="https://github.com/ArtemAzokhov" style="color: white;" target="_blank">GitHub</a> |
+                <i class="fab fa-itch-io"></i> <a href="https://itemichdev.itch.io" style="color: white;" target="_blank">Itch</a>
+            </p>
+        </div>
 
-            <div class="section">
-                <h2>Education</h2>
-                <p><strong>Bachelor's Degree of Engineering</strong>, Belarusian State University of Transport (2009)</p>
+        <div class="container">
+            <!-- Left Column -->
+            <div class="left-column">
+
+                <!-- Technical Skills -->
+                <div class="section">
+                    <h2>Technical Skills</h2>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-gear"></i> Unreal Engine 5</li>
+                        <li><i class="fas fa-code"></i> C++</li>
+                        <li><i class="fas fa-code-branch"></i> Git</li>
+                        <li><i class="fas fa-cogs"></i> Blueprints</li>
+                        <li><i class="fas fa-calculator"></i> Physics and Mathematics</li>
+                        <li><i class="fas fa-gamepad"></i> Game Design and Mechanics</li>
+                        <li><i class="fas fa-robot"></i> AI Programming</li>
+                        <li><i class="fas fa-laptop-code"></i> User Interface (UI) Development</li>
+                        <li><i class="fas fa-bug"></i> Debugging and Troubleshooting</li>
+                    </ul>
+                </div>
+
+                <!-- Languages -->
+                <div class="section">
+                    <h2>Languages</h2>
+                    <ul class="languages-list">
+                        <li><i class="fas fa-language"></i> Russian  - Native</li>
+                        <li><i class="fas fa-language"></i> English - B1</li>
+                        <li><i class="fas fa-language"></i> Belarusian - Native</li>
+                    </ul>
+                </div>
+
+                <!-- Courses -->
+                <div class="section">
+                    <h2>Courses</h2>
+                    <p><strong>Game Developer in Unreal Engine from Zero to Middle</strong> (May 2022 – Present)</p>
+                    <p><strong>Unreal Engine – The Complete Guide to C++ Development</strong> (October 2023 – December 2023)</p>
+                </div>
+
+                <!-- Education -->
+                <div class="section">
+                    <h2>Education</h2>
+                    <p><strong>Bachelor's Degree of Engineering</strong>, Belarusian State University of Transport (2009)</p>
+                </div>
+
             </div>
 
-            <div class="section">
-                <h2>Courses</h2>
-                <p><strong>Game Developer in Unreal Engine from Zero to Middle</strong> (May 2022 – Present)</p>
-                <p><strong>Unreal Engine – The Complete Guide to C++ Development</strong> (October 2023 – December 2023)</p>
-            </div>
-			
-			<div class="section">
-                <h2>Technical Skills</h2>
-                <ul class="skills-list">
-                    <li><i class="fas fa-gear"></i> Unreal Engine 4/5</li>
-                    <li><i class="fas fa-code"></i> C++</li>
-                    <li><i class="fas fa-code-branch"></i> Git</li>
-                    <li><i class="fas fa-cogs"></i> Blueprints</li>
-                    <li><i class="fas fa-calculator"></i> Physics and Mathematics</li>
-                    <li><i class="fas fa-gamepad"></i> Game Design and Mechanics</li>
-                    <li><i class="fas fa-robot"></i> AI Programming</li>
-                    <li><i class="fas fa-laptop-code"></i> User Interface (UI) Development</li>
-                    <li><i class="fas fa-bug"></i> Debugging and Troubleshooting</li>
-                </ul>
-            </div>
-			
-			<div class="section">
-                <h2>Soft Skills</h2>
-                <ul class="skills-list">
-                    <li><i class="fas fa-comments"></i> Communication</li>
-                    <li><i class="fas fa-users"></i> Teamwork</li>
-                    <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
-                    <li><i class="fas fa-comment-alt"></i> Receiving Feedback</li>
-                    <li><i class="fas fa-tasks"></i> Goal Setting</li>
-                    <li><i class="fas fa-clock"></i> Time Management</li>
-                    <li><i class="fas fa-random"></i> Adaptability</li>
-                    <li><i class="fas fa-heart"></i> A passion for games</li>
-                </ul>
-            </div>
+            <!-- Right Column -->
+            <div class="right-column">
 
-            <div class="section">
-                <h2>Languages</h2>
-                <ul class="languages-list">
-                    <li><i class="fas fa-language"></i> Russian</li>
-                    <li><i class="fas fa-language"></i> English</li>
-                    <li><i class="fas fa-language"></i> Belarusian</li>
-                </ul>
+                <!-- Profile -->
+                <div class="section">
+                    <h2>Profile</h2>
+                    <p id="profile-text"></p>
+                </div>
+
+                <!-- Projects -->
+                <div class="section">
+                    <h2>Projects</h2>
+                    <ul class="projects-list">
+                        <li>
+                            <strong>Shoot Them Up, Course-Project</strong> (October 2023 – December 2023)
+                            <p>Third-person shooter game based on Epic Game content from “Shooter Game”...</p>
+                            <p><a href="https://github.com/ArtemAzokhov/ShootThemUp" target="_blank"><i class="fab fa-github"></i> View Project on GitHub</a></p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <!-- Right Column -->
-        <div class="right-column">
-			
-			<div class="section">
-				<h2>Profile</h2>
-				<p id="profile-text"></p>
-			</div>
-            
-
-            <div class="section">
-                <h2>Projects</h2>
-                <ul class="projects-list">
-                    <li>
-                        <strong>Shoot Them Up, Course-Project</strong> (October 2023 – December 2023)
-                        <p>Third-person shooter game based on Epic Game content from “Shooter Game”...</p>
-                        <p><a href="https://github.com/ArtemAzokhov/ShootThemUp" target="_blank"><i class="fab fa-github"></i> View Project on GitHub</a></p>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
-
-	</div>
 
     <div class="print-button">
         <button onclick="window.print()">Print this page</button>
