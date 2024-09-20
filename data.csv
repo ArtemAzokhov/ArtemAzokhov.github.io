@@ -1,10 +1,5 @@
-A1;B1;C1;D1;E1
-A2;I aspire to become a programmer in game development, as I am fascinated by the transformation of written code into the virtual worlds where the actions of the game take place. I have always loved learning new technologies and solving complex problems, and I also love playing games! I am building and deepening my knowledge in C++ and Unreal Engine, and I am eager to improve my skills and learn from the best.
-Having graduated from university as amechanical engineer, I possess a deepunderstanding of mechanics and geometry,which is a significant advantage in gamedevelopment. I am interested in variousaspects of game development, including gamemechanics, animations, rendering, and theautomation of development processes.
-I believe that working as a programmer withUnreal Engine will allow me to express mycreativity and passion for games, as well ascontribute to the industry and community.;C2;D2;E2
-A3;B3;C3;D3;E3
-A4;B4;C4;D4;E4
-A5;B5;C5;D5;E5
-A6;B6;C6;D6;E6
-A7;B7;C7;D7;E7
-A8;B8;C8;D8;E8
+id name;Text
+profile-text;I aspire to become a programmer in game development, as I am fascinated by the transformation of written code into the virtual worlds where the actions of the game take place. I have always loved learning new technologies and solving complex problems, and I also love playing games! I am building and deepening my knowledge in C++ and Unreal Engine, and I am eager to improve my skills and learn from the best.;
+project1-text;Third-person shooter game based on Epic Game content from "Shooter Game"...game based on Epic Game contentgame based;
+project2-text;Runner-mechanics-based project;
+project3-text;B5;

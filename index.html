@@ -16,6 +16,10 @@
             const rows = data.split("\n");
             const profileText = rows[1].split(";")[1];
             document.getElementById('profile-text').textContent = profileText;
+            const project1Text = rows[2].split(";")[1];
+            document.getElementById('project1-text').textContent = project1Text;
+            const project2Text = rows[3].split(";")[1];
+            document.getElementById('project2-text').textContent = project2Text;
         }
 
         window.onload = loadProfile;
@@ -94,16 +98,38 @@
                     <p id="profile-text"></p>
                 </div>
 
-                <!-- Projects -->
-                <div class="section">
+                <!-- Projects - card -->
+                <div class="projects">
                     <h2>Projects</h2>
-                    <ul class="projects-list">
-                        <li>
-                            <strong>Shoot Them Up, Course-Project</strong> (October 2023 – December 2023)
-                            <p>Third-person shooter game based on Epic Game content from “Shooter Game”...</p>
-                            <p><a href="https://github.com/ArtemAzokhov/ShootThemUp" target="_blank"><i class="fab fa-github"></i> View Project on GitHub</a></p>
-                        </li>
-                    </ul>
+
+                    <!-- Projects - 1 -->
+                    <div class="project-card">
+
+                        <img src="assets/images/stu.png" alt="Game Image" class="project-image">
+                        <div class="project-info">
+                            <h3>Shoot Them Up</h3>
+                            <span> Course-Project </span>
+                            <span>(October 2023 – December 2023)</span>
+                            <p id="project1-text"></p>
+                            <a href="https://github.com/ArtemAzokhov/ShootThemUp" class="socialmedia-link"><i class="fab fa-github"></i> </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Projects - 2 -->
+                    <div class="project-card">
+
+                        <img src="assets/images/race-against-time.png" alt="Game Image" class="project-image">
+                        <div class="project-info">
+                            <h3>Rece against time</h3>
+                            <span> GameJam-Project </span>
+                            <span>(June 2024 – July 2024)</span>
+                            <p id="project2-text"></p>
+                            <a href="https://viperlows.itch.io/timeracer" class="socialmedia-link"><i class="fab fa-itch-io"></i> </a>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
