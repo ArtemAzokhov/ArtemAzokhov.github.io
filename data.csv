@@ -1,5 +1,5 @@
 id name;Text
-profile-text;I aspire to become a programmer in game development, as I am fascinated by the transformation of written code into the virtual worlds where the actions of the game take place. I have always loved learning new technologies and solving complex problems, and I also love playing games! I am building and deepening my knowledge in C++ and Unreal Engine, and I am eager to improve my skills and learn from the best.;
-project1-text;Third-person shooter game based on Epic Game content from "Shooter Game"...game based on Epic Game contentgame based;
-project2-text;Runner-mechanics-based project;
-project3-text;B5;
+profile-text;C++ Unreal Engine developer with experience in home projects and collaborative game jam participation. Skilled in utilizing engine tools to solve gameplay challenges, with the ability to quickly adapt to new requirements. Ready to contribute to engaging and high-quality projects!
+project1-text;"Third person shooter game based on Epic Game content from “Shooter game”. It was designed with Unreal Engine framework like GameMode, GameInstance, PlayerState in C++.In this project I make animations with AnimNotify, familiar the VFX, programed behavior tree with EQS for AI Character, make GameMode for mach gaming, programming UI HUD and main menu with level selection and preloader."
+project2-text;Runner-mechanics-based project
+project3-text;B5
