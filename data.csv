@@ -1,5 +1,5 @@
 id name;Text
 profile-text;C++ Unreal Engine developer with experience in home projects and collaborative game jam participation. Skilled in utilizing engine tools to solve gameplay challenges, with the ability to quickly adapt to new requirements. Ready to contribute to engaging and high-quality projects!
-project1-text;"Third person shooter game based on Epic Game content from “Shooter game”. It was designed with Unreal Engine framework like GameMode, GameInstance, PlayerState in C++.In this project I make animations with AnimNotify, familiar the VFX, programed behavior tree with EQS for AI Character, make GameMode for mach gaming, programming UI HUD and main menu with level selection and preloader."
+project1-text;Third person shooter game based on Epic Game content from “Shooter game”. It was designed with Unreal Engine framework like GameMode, GameInstance, PlayerState in C++.In this project I make animations with AnimNotify, familiar the VFX, programed behavior tree with EQS for AI Character, make GameMode for mach gaming, programming UI HUD and main menu with level selection and preloader.
 project2-text;Runner-mechanics-based project
-project3-text;B5
+project3-text;3D puzzle-platformer

@@ -8,18 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/resume.css">
     <link rel="shortcut icon" href="assets/game.ico">
+
     <script>
 
         async function loadProfile() {
-            const response = await fetch(`data.csv?t=${new Date().getTime()}`);
+                    try {
+            const response = await fetch(`data.csv?t=${Date.now()}`);
             const data = await response.text();
-            const rows = data.split("\n");
-            const profileText = rows[1].split(";")[1];
-            document.getElementById('profile-text').textContent = profileText;
-            const project1Text = rows[2].split(";")[1];
-            document.getElementById('project1-text').textContent = project1Text;
-            const project2Text = rows[3].split(";")[1];
-            document.getElementById('project2-text').textContent = project2Text;
+            const rows = data.split("\n").filter(line => line.trim() !== '');
+
+            for (let i = 1; i < rows.length; i++) {
+                const [id, text] = rows[i].split(";");
+
+                if (id && text) {
+                    const element = document.getElementById(id.trim());
+                    if (element) {
+                        element.textContent = text.trim();
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error("Error loading data:", error);
+            }
         }
 
         window.onload = loadProfile;
@@ -126,6 +136,20 @@
                             <span>(June 2024 – July 2024)</span>
                             <p id="project2-text"></p>
                             <a href="https://viperlows.itch.io/timeracer" class="socialmedia-link"><i class="fab fa-itch-io"></i> </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Projects - 3 -->
+                    <div class="project-card">
+
+                        <img src="assets/images/cave-mates.png" alt="Game Image" class="project-image">
+                        <div class="project-info">
+                            <h3>Cave Mates</h3>
+                            <span> GameJam-Project </span>
+                            <span>(Marth 2025 – April 2025)</span>
+                            <p id="project3-text"></p>
+                            <a href="https://juliett1991.itch.io/cave-mates" class="socialmedia-link"><i class="fab fa-itch-io"></i> </a>
                         </div>
 
                     </div>
